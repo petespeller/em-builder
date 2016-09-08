@@ -1,0 +1,8 @@
+.warning {
+  border: 3px solid red;
+}
+
+.warning-msg {
+  color: red;
+  display:none;
+}
