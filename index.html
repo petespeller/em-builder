@@ -1,7 +1,7 @@
 <html>
 <head>
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="https://github.com/petespeller/em-builder/blob/gh-pages/stlyes.css">
 
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,37 +10,42 @@
 	</title>
 </head>
 <body>
-
-<textarea class="form-control" placeholder="Copy paste your email content here" rows="3" id="emInput"></textarea>
-<p class="warning-msg">
-This field must not be blank.
-</p>
-<br />
-<input type="text" class="form-control" placeholder="Add your BURL link" id="burl">
-<p class="warning-msg">
-This field must not be blank.
-</p>
-<br />
-<input type="text" class="form-control" placeholder="Add your secure.greenpeace short link" id="shortLink">
-<p class="warning-msg">
-This field must not be blank.
-</p>
-<br />
-<input type="text" style="width:200px;" class="form-control" id="exampleInputName2" placeholder="Add your button text here" id="btnText">
-<br />
-<select style="width:100px;height:50px;" name="bgcolour">
-  <option style="width:100px;height:50px;background-color:#4AAE1E;" value="Green">Green</option>
-  <option style="background-color:#2A5C03;" value="Green2">Green 2</option>
-  <option style="background-color:#3b5998;" value="Blue">FB Blue</option>
-  <option style="background-color:#55acee;" value="Blue2">Twitter blue</option>
-</select>
-<br />
-<label for="exampleInputFile">Upload image (optional)</label>
-<input type="file" id="exampleInputFile">
-<br />
-<button type="button" class="btn btn-primary" id="create">Create email HTML and plain text</button>
-<br />
-<textarea class="form-control" placeholder="Final email text here" rows="3" readonly id="emOutput"></textarea>
+	<div class="main">
+		<div class="container">
+			<textarea class="form-control" placeholder="Copy paste your email content here" rows="3" id="emInput"></textarea>
+			<p class="warning-msg">
+				This field must not be blank.
+			</p>
+			<br />
+			<input type="text" class="form-control" placeholder="Add your BURL link" id="burl">
+			<p class="warning-msg">
+				This field must not be blank.
+			</p>
+			<br />
+			<input type="text" class="form-control" placeholder="Add your secure.greenpeace short link" id="shortLink">
+			<p class="warning-msg">
+				This field must not be blank.
+			</p>
+			<br />
+			<input type="text" style="width:200px;" class="form-control" id="exampleInputName2" placeholder="Add your button text here" id="btnText">
+			<br />
+			<select style="width:100px;height:50px;" name="bgcolour">
+				<option style="width:100px;height:50px;background-color:#4AAE1E;" value="Green">Green</option>
+				<option style="background-color:#2A5C03;" value="Green2">Green 2</option>
+				<option style="background-color:#3b5998;" value="Blue">FB Blue</option>
+				<option style="background-color:#55acee;" value="Blue2">Twitter blue</option>
+			</select>
+			<br />
+			<label for="exampleInputFile">Upload image (optional)</label>
+			<input type="file" id="exampleInputFile">
+			<br />
+			<button type="button" class="btn btn-primary" id="create">Create email HTML and plain text</button>
+			<br />
+			<textarea class="form-control" placeholder="Final email text here" rows="3" readonly id="emOutput"></textarea>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="https://github.com/petespeller/em-builder/blob/gh-pages/main.js"></script>
 
 </body>
 </html>
